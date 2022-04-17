@@ -21,6 +21,7 @@ const PizzaMenu = () => {
             .then((response) => response.json())
             .then((data) => setFood(data))
     }
+    const total  = food.reduce(((acc, totalPrice) => acc + totalPrice.price), 0)
 
     useEffect(() => {
         getFood('pizzas')
@@ -54,12 +55,9 @@ const PizzaMenu = () => {
                     <div className={styles.pizzaBlock}>
                         {food.map(item => (
                             <PizzaBlock
-                                // addToBasket={addToBasket}
+                                total={total}
                                 item={item}
                                 key={item.id}
-                                // addPizza={addPizza}
-                                // removePizza={removePizza}
-                                // count={count}
                             />
                         ))}
                     </div>
