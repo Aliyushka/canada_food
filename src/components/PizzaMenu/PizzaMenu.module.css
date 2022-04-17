@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+.new{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 32px;
+    font-family: Roboto, serif;
+}
+.active{
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: #1D3130;
+    font-size: 16px;
+    font-family: Roboto,serif;
+}
+
+li:hover{
+    color: #FF583E;
+    text-decoration: underline;
+}
+
+.big{
+    font-size: 28px;
+    color: #254F4C;
+    font-weight: 900;
+    margin-left: 32px;
+    margin-right: 164px;
+    font-family: Roboto, serif;
+    letter-spacing: 0.5px;
+}
+
+.drinks{
+    margin-right: 500px;
+}
+
+
+.burger{
+    width: 264px;
+    height: 349px;
+    background-color: #2B4241;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    margin-top: 0;
+}
+
+.burgerImage{
+    margin-top: -63px;
+    width: 182px;
+    height: 142px;
+}
+
+.cheeseburger{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: Roboto,serif;
+    text-align: center;
+}
+.composition{
+    margin: 0 16px 0;
+    text-align: center;
+    width: 231px;
+    height: 88.54px;
+    color: #FFFFFF;
+    font-family: 'Roboto',serif;
+}
+.price{
+    color: #FFFFFF;
+    font-family: 'Roboto',serif;
+    font-weight: 700;
+    margin: 0;
+}
+.minus, .plus{
+    background: transparent;
+    border: none;
+    color: #FF583E;
+    font-size: 30px;
+}
+.number{
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.basket{
+    width: 200px;
+    height: 48px;
+    border-radius: 40px;
+    background-color: #FF583E;
+    color: #FFFFFF;
+    border: solid 1px #FF583E;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Roboto,serif;
+    letter-spacing: 1px;
+}
+
+.map{
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1152px;
+
+}

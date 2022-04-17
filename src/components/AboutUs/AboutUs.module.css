@@ -1,0 +1,32 @@
+
+.all{
+    display: flex;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.fast{
+    font-family: 'Roboto',serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #254F4C;
+}
+
+.aboutUs{
+    width: 256px;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #1D3130;
+}
+.rectangle{
+    width: 88px;
+    height: 88px;
+}

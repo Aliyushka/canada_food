@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.us{
+    font-family: Roboto,serif;
+    color: #254F4C;
+    margin-left: 30px;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1120px;
+
+}
+
+.scroll{
+
+}

@@ -1,0 +1,51 @@
+.pizzaBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 2rem;
+}
+.mainText{
+    margin: 0 20px 30px 0;
+    display: flex;
+    justify-content: right;
+    height: 50px;
+    font-family: 'Roboto',serif;
+}
+.mainText p{
+    width: 136px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1D3130;
+}
+
+.mainText select {
+    padding: 0 20px 0 20px;
+    font-size: 14px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    outline: none;
+    font-family: 'Roboto',serif;
+}
+.show{
+    width: 200px;
+    height: 48.3px;
+    border: 1px solid #FF583E;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FF583E;
+    background-color: white;
+    margin-left: 41.5%;
+    margin-top: 7px;
+    cursor: pointer;
+    transition: .4s;
+}
+.show:hover{
+    background-color: #FF583E;
+    color: white;
+    transition: .4s;
+}

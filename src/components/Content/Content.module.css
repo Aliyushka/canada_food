@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.content{
+    display: flex;
+    position: relative;
+    height: 498px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid red;
+    margin-top: 6rem;
+}
+
+.description{
+    padding-top: 95px;
+}
+.delivery{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #254F4C;
+    margin-bottom: 10px;
+}
+
+.delivery1{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D3130;
+}
+
+
+.go{
+    width: 216px;
+    height: 49px;
+    border: none;
+    cursor: pointer;
+    background: #FF583E;
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: .4s;
+}
+.go:hover{
+    background-color: green;
+    transform: scale(1.1);
+}
+
+.btn{
+    position: relative;
+}
+.btn img{
+    position: relative;
+    width: 20px;
+    right: 2rem;
+    top: 6px;
+}
+
+
+.price img{
+    width: 83px;
+    position: absolute;
+    right: 19.5rem;
+    top: 1.5rem;
+}
+.big img:nth-child(1){
+    position: absolute;
+    right: 90px;
+    bottom: 20px;
+    width: 540px;
+    height: 392px;
+    z-index: 10;
+}
+.big img:nth-child(2){
+    width: 210px;
+    height: 395px;
+    position: absolute;
+    right: -1.5rem;
+    top: 30px;
+}
