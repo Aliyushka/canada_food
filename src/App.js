@@ -7,62 +7,51 @@ import HomePage from "./pages/HomePage/HomePage";
 import delivery from "./pages/delivery/Delivery";
 import contacts from "./pages/contacts/Contacts";
 import basket from "./pages/basket/Basket";
-import Pizzas from "./components/Pizzas/Pizzas";
-import Sushi from "./pages/Sushi/Sushi";
-import Roll from "./pages/Roll/Roll"
-import Salads from "./pages/Salads/Salads";
-import Desert from "./pages/Salads/Salads";
+import AppContext from "./contex";
 
 const App = () => {
-    const [sushi, setSushi] = useState([])
     const [card, setCard] = useState([])
+    const [count, setCount] = useState(0)
     const addToBasket = (item) => {
-        if (card.find(i => i.id === item.id)){
+        if (card.find(i => i.id === item.id)) {
             alert('Вы уже добавили')
         } else {
             setCard([...card, item])
         }
     }
 
-    useEffect(() => {
-        fetch('http://localhost:3000/sushi')
-            .then(response => response.json())
-            .then(data => setSushi(data))
-    }, [])
-
-    const removeItemInBasket = (id) => {
+    function increment() {
+        setCount(count + 1)
+    }
+    function decrement() {
+        setCount(count - 1)
+    }
+    const deleteFromBasket = (id) => {
         setCard(prev => prev.filter(item => item.id !== id))
     }
 
     return (
-        <BrowserRouter>
-            <div className="container">
-                <Header card={card}/>
-                <Routes>
-                    <Route path="/"
-                           element={<HomePage addToBasket={addToBasket} removeItemInBasket={removeItemInBasket}/>}/>
-                    <Route path="/delivery" element={<delivery/>}/>
-                    <Route path="/contacts" element={<contacts/>}/>
-                    <Route path="/basket" element={<basket card={card} removeItemInBasket={removeItemInBasket}/>}/>
-                    <Route
-                        path='/pizzas'
-                        element={
-                            <Pizzas
-                                addToBasket={addToBasket}
-                                removeItemInBasket={removeItemInBasket}
-                            />
-                        }
-                    />
-                    <Route path="/sushi" element={<Sushi sushi={sushi}/>}/>
-                    <Route path="/roll" element={<Roll/>}/>
-                    <Route path="/salads" element={<Salads/>}/>
-                    <Route path="/desert" element={<Desert/>}/>
-                </Routes>
-                <Footer/>
-            </div>
-
-        </BrowserRouter>
+        <AppContext.Provider value={{
+            deleteFromBasket,
+            addToBasket,
+            card,
+            increment,
+            decrement,
+            count
+        }}>
+            <BrowserRouter>
+                <div className="container">
+                    <Header/>
+                    <Routes>
+                        <Route path="/" element={<HomePage/>}/>
+                        <Route path="/delivery" element={<delivery/>}/>
+                        <Route path="/contacts" element={<contacts/>}/>
+                        <Route path="/basket" element={<basket/>}/>
+                    </Routes>
+                    <Footer/>
+                </div>
+            </BrowserRouter>
+        </AppContext.Provider>
     );
 }
-
 export default App;

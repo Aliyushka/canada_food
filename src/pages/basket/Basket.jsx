@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import s from "./Basket.module.css";
 import {NavLink} from "react-router-dom";
+import AppContext from "../../contex";
 
-const Basket = (props) => {
-    const {card, removeItemInBasket} = props
+const Basket = () => {
+    const {card, deleteFromBasket} = useContext(AppContext)
     return (
         <div>
             {card.length > 0
@@ -16,7 +17,7 @@ const Basket = (props) => {
                                     <h1>{elem.name}</h1>
                                     <p className={s.title}>{elem.title}</p>
                                     <strong>{elem.price}</strong>
-                                    <button onClick={() => removeItemInBasket(elem.id)}>Удалить</button>
+                                    <button onClick={() => deleteFromBasket(elem.id)}>Удалить</button>
                                 </div>
                             )
                         })}

@@ -13,6 +13,7 @@ const Review = () => {
                         return (
                             <BlockReview
                                 item={item}
+                                key={index}
                             />
                         )
                     })

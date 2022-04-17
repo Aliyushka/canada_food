@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 nav ul li{
@@ -16,6 +16,7 @@ nav ul li{
     margin-right: 32px;
     font-family: Roboto, serif;
 }
+
 .active{
     color: red;
 }
@@ -112,11 +113,42 @@ li:hover{
     letter-spacing: 1px;
 }
 
-.map{
+.pizzaBlock{
     display: flex;
+    flex-wrap: wrap;
     margin-left: 20px;
     justify-content: space-between;
     align-items: center;
     width: 1152px;
-
+    text-align: center;
+}
+.select{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.7rem;
+    gap: 2rem;
+    margin-right: 1.5rem;
+}
+.select select{
+    border: 1px solid wheat;
+    padding: 4px 10px;
+}
+.more{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    margin: 0 auto;
+    color: #FF583E;
+    border: 1px solid #FF583E;
+    font-size: 16px;
+    transition: .4s;
+    background-color: transparent;
+}
+.more:hover{
+    background-color: #FF583E;
+    transition: .4s;
+    color: white;
+    transform: scale(1.1);
 }

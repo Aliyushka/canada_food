@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import logo from '../../media/icons/logo.svg'
 import call from '../../media/icons/call.svg'
 import basket from '../../media/icons/basket.svg'
 import s from './Header.module.css'
 import {NavLink} from "react-router-dom";
+import AppContext from "../../contex";
 
-const Header = ({card}) => {
+const Header = () => {
+    const {card} = useContext(AppContext)
     return (
         <header className={s.menu}>
             <ul>
@@ -48,7 +50,7 @@ const Header = ({card}) => {
                     <li className={s.count}>
                         <NavLink to="/basket">
                             <img src={basket} alt=""/>
-                            <p>{card}</p>
+                            <p>{card.length}</p>
                         </NavLink>
                     </li>
                 </div>

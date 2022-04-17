@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import s from './PizzaBlock.module.css'
+import AppContext from "../../contex";
 
 const PizzaBlock = (props) => {
-    const {item, removePizza, addPizza, count, addToBasket} = props
+    const {addToBasket} = useContext(AppContext)
+    const {item, removePizza, addPizza, count} = props
     const toggleBtn = () => {
         addToBasket(item)
     }

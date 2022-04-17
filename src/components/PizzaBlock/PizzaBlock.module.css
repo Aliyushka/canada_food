@@ -103,6 +103,7 @@
     letter-spacing: 1px;
     transition: .4s;
     cursor: pointer;
+    margin-top: 1rem;
 }
 .btn:hover{
     background-color: #FF583E;

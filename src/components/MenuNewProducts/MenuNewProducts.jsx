@@ -1,22 +1,17 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import styles from './MenuNewProducts.module.css'
 import img from "../../media/second.svg";
+import AppContext from "../../contex";
 
 const MenuNewProducts = () => {
-    const [number, setNumber] = useState(1)
-
-    const increment = () => {
-        setNumber(number + 1)
+    const {addToBasket, decrement, increment, count} = useContext(AppContext)
+    const toggleBtn = (item) => {
+        addToBasket(item)
     }
-    const decrement = () => {
-        setNumber(number - 1)
-    }
-
     const [food, setFood] = useState([])
 
     const getFood = (foodUrl) => {
         const url = 'http://localhost:3001/' + foodUrl
-
         fetch(url)
             .then((response) => response.json())
             .then((data) => setFood(data))
@@ -48,24 +43,22 @@ const MenuNewProducts = () => {
 
                 <div className={styles.map}>
                     {
-                        food.map((item) => {
-                            return <div className={styles.burger}>
-                                key={item.id}
+                        food.map((item, index) => {
+                            return <div className={styles.burger} key={index}>
                                 <img className={styles.burgerImage} src={item.image}/>
                                 <p className={styles.cheeseburger}>{item.name}</p>
                                 <p className={styles.composition}>{item.desc}</p>
                                 <p className={styles.price}>{item.price}</p>
                                 <div className={styles.btn}>
                                     <button onClick={decrement} className={styles.minus}>-</button>
-                                    <p className={styles.number}>{number}</p>
+                                    <p className={styles.number}>{count}</p>
                                     <button onClick={increment} className={styles.plus}>+</button>
                                 </div>
-                                <button className={styles.basket}>В корзину</button>
+                                <button className={styles.basket} onClick={() => toggleBtn(item.name)}>В корзину</button>
                             </div>
                         })
                     }
                 </div>
-
             </div>
         </>
 

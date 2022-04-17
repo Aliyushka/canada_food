@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styles from './PizzaMenu.module.css'
-import img from "../../media/second.svg";
+import PizzaBlock from "../PizzaBlock/PizzaBlock";
 
 const PizzaMenu = () => {
     const [number, setNumber] = useState(1)
@@ -23,7 +23,7 @@ const PizzaMenu = () => {
     }
 
     useEffect(() => {
-        getFood('burger')
+        getFood('pizzas')
     }, [])
 
 
@@ -31,41 +31,40 @@ const PizzaMenu = () => {
         <>
             <div>
                 <div className={styles.new}>
-                    <div className={styles.big}>Новинки</div>
-                    <nav>
+                    <div className={styles.big}>Меню</div>
+                    <nav className={styles.nav}>
                         <ul>
-                            <li onClick={() => getFood('pizza')}>Пицца</li>
-                            <li onClick={() => getFood('burger')}>Бургер</li>
-                            <li onClick={() => getFood('sushi')}>Суши</li>
-                            <li onClick={() => getFood('roll')}>Роллы</li>
-                            <li onClick={() => getFood('salad')}>Салаты</li>
-                            <li onClick={() => getFood('desert')}>Десерты</li>
-                            <li onClick={() => getFood('drinks')} className={styles.drinks}>Напитки</li>
+                            <li onClick={() => getFood('pizzas')}>Пицца</li>
+                            <li onClick={() => getFood('burgers')}>Бургер</li>
+                            <li onClick={() => getFood('Sushi')}>Суши</li>
+                            <li onClick={() => getFood('rolls')}>Роллы</li>
+                            <li onClick={() => getFood('salads')}>Салаты</li>
+                            <li onClick={() => getFood('deserts')}>Десерты</li>
+                            <li onClick={() => getFood('drinkS')} className={styles.drinks}>Напитки</li>
                         </ul>
                     </nav>
-
                 </div>
-
-                <div className={styles.map}>
-                    {
-                        food.map((item) => {
-                            return <div className={styles.burger}>
+                <div className={styles.select}>
+                    <p>Сортировать  по:</p>
+                    <select>
+                        <option>По умолчанию</option>
+                    </select>
+                </div>
+                <div className={styles.eightPizzas}>
+                    <div className={styles.pizzaBlock}>
+                        {food.map(item => (
+                            <PizzaBlock
+                                // addToBasket={addToBasket}
+                                item={item}
                                 key={item.id}
-                                <img className={styles.burgerImage} src={item.image}/>
-                                <p className={styles.cheeseburger}>{item.name}</p>
-                                <p className={styles.composition}>{item.desc}</p>
-                                <p className={styles.price}>{item.price}</p>
-                                <div className={styles.btn}>
-                                    <button onClick={decrement} className={styles.minus}>-</button>
-                                    <p className={styles.number}>{number}</p>
-                                    <button onClick={increment} className={styles.plus}>+</button>
-                                </div>
-                                <button className={styles.basket}>В корзину</button>
-                            </div>
-                        })
-                    }
+                                // addPizza={addPizza}
+                                // removePizza={removePizza}
+                                // count={count}
+                            />
+                        ))}
+                    </div>
+                    <button className={styles.more}>Показать еще</button>
                 </div>
-
             </div>
         </>
 
