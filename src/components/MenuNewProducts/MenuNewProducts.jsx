@@ -17,7 +17,7 @@ const MenuNewProducts = () => {
         setCount(count - 1)
     }
     const getFood = (foodUrl) => {
-        const url = 'http://localhost:3001/' + foodUrl
+        const url = 'http://localhost:3000/' + foodUrl
         fetch(url)
             .then((response) => response.json())
             .then((data) => setFood(data))

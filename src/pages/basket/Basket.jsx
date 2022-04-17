@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 import AppContext from "../../contex";
 
 const Basket = () => {
-    const {card, deleteFromBasket} = useContext(AppContext)
+    const {deleteFromBasket, card} = useContext(AppContext)
     return (
         <div>
             {card.length > 0

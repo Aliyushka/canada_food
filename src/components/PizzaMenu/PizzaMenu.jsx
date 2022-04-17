@@ -15,7 +15,7 @@ const PizzaMenu = () => {
     const [food, setFood] = useState([])
 
     const getFood = (foodUrl) => {
-        const url = 'http://localhost:3001/' + foodUrl
+        const url = 'http://localhost:3000/' + foodUrl
 
         fetch(url)
             .then((response) => response.json())

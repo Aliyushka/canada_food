@@ -6,7 +6,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import delivery from "./pages/delivery/Delivery";
 import contacts from "./pages/contacts/Contacts";
-import basket from "./pages/basket/Basket";
+import Basket from "./pages/basket/Basket";
 import AppContext from "./contex";
 
 const App = () => {
@@ -36,7 +36,7 @@ const App = () => {
                         <Route path="/" element={<HomePage/>}/>
                         <Route path="/delivery" element={<delivery/>}/>
                         <Route path="/contacts" element={<contacts/>}/>
-                        <Route path="/basket" element={<basket/>}/>
+                        <Route path="/basket" element={<Basket/>}/>
                     </Routes>
                     <Footer/>
                 </div>
