@@ -4,12 +4,18 @@ import img from "../../media/second.svg";
 import AppContext from "../../contex";
 
 const MenuNewProducts = () => {
-    const {addToBasket, decrement, increment, count} = useContext(AppContext)
+    const {addToBasket} = useContext(AppContext)
+    const [count, setCount] = useState(0)
     const toggleBtn = (item) => {
         addToBasket(item)
     }
     const [food, setFood] = useState([])
-
+    function increment() {
+        setCount(count + 1)
+    }
+    function decrement() {
+        setCount(count - 1)
+    }
     const getFood = (foodUrl) => {
         const url = 'http://localhost:3001/' + foodUrl
         fetch(url)

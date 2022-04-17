@@ -27,7 +27,6 @@ const PizzaMenu = () => {
         getFood('pizzas')
     }, [])
 
-
     return (
         <>
             <div>

@@ -11,7 +11,6 @@ import AppContext from "./contex";
 
 const App = () => {
     const [card, setCard] = useState([])
-    const [count, setCount] = useState(0)
     const addToBasket = (item) => {
         if (card.find(i => i.id === item.id)) {
             alert('Вы уже добавили')
@@ -20,12 +19,6 @@ const App = () => {
         }
     }
 
-    function increment() {
-        setCount(count + 1)
-    }
-    function decrement() {
-        setCount(count - 1)
-    }
     const deleteFromBasket = (id) => {
         setCard(prev => prev.filter(item => item.id !== id))
     }
@@ -35,9 +28,6 @@ const App = () => {
             deleteFromBasket,
             addToBasket,
             card,
-            increment,
-            decrement,
-            count
         }}>
             <BrowserRouter>
                 <div className="container">

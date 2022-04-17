@@ -1,24 +1,20 @@
 .footer{
     background-color: #254F4C;
     height: 152px;
-    width: 1600px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 88px;
+    gap: 4rem;
 }
 
 .companyLogo{
     display: flex;
-    margin-right: 50px;
-    margin-left: 100px;
     margin-top:30px ;
 }
 
 .contacts{
     display: flex;
-
 }
 
 .food{
@@ -43,7 +39,6 @@
     font-family: 'Roboto',serif;
     font-weight: 400;
     font-size: 18px;
-
     color: #FFFFFF;
 }
 
@@ -59,6 +54,5 @@
 .list{
     color: #FFFFFF;
     font-family: 'Roboto',serif;
-    margin-right: 60px;
     margin-bottom: 45px;
 }
