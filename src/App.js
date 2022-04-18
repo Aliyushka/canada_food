@@ -4,8 +4,6 @@ import Footer from "./components/Footer/Footer";
 import "./App.css"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
-import delivery from "./pages/delivery/Delivery";
-import contacts from "./pages/contacts/Contacts";
 import Basket from "./pages/basket/Basket";
 import AppContext from "./contex";
 

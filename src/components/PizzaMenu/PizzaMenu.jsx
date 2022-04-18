@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './PizzaMenu.module.css'
 import PizzaBlock from "../PizzaBlock/PizzaBlock";
 
@@ -21,7 +21,6 @@ const PizzaMenu = () => {
             .then((response) => response.json())
             .then((data) => setFood(data))
     }
-    const total  = food.reduce(((acc, totalPrice) => acc + totalPrice.price), 0)
 
     useEffect(() => {
         getFood('pizzas')
@@ -54,7 +53,9 @@ const PizzaMenu = () => {
                     <div className={styles.pizzaBlock}>
                         {food.map(item => (
                             <PizzaBlock
-                                total={total}
+                                number={number}
+                                increment={increment}
+                                decrement={decrement}
                                 item={item}
                                 key={item.id}
                             />

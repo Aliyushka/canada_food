@@ -3,8 +3,8 @@ import s from './PizzaBlock.module.css'
 import AppContext from "../../contex";
 
 const PizzaBlock = (props) => {
-    const {addToBasket, count, increment, decrement} = useContext(AppContext)
-    const {item, total} = props
+    const {addToBasket, count} = useContext(AppContext)
+    const {item, increment, decrement, number} = props
     const toggleBtn = () => {
         addToBasket(item)
     }
@@ -20,10 +20,10 @@ const PizzaBlock = (props) => {
                 <div className={s.textPizza}>
                     <h1>{item.name}</h1>
                     <p className={s.title}>{item.title}</p>
-                    <h3>{total}</h3>
+                    <h3>{item.price}</h3>
                     <div className={s.count}>
                         <button onClick={decrement}>-</button>
-                        <p>{count}</p>
+                        <p>{number}</p>
                         <button onClick={increment}>+</button>
                     </div>
                     <button onClick={toggleBtn} className={s.btn}>В корзину</button>
