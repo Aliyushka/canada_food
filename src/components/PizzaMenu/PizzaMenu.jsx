@@ -36,11 +36,11 @@ const PizzaMenu = () => {
                         <ul>
                             <li onClick={() => getFood('pizzas')}>Пицца</li>
                             <li onClick={() => getFood('burgers')}>Бургер</li>
-                            <li onClick={() => getFood('Sushi')}>Суши</li>
+                            <li onClick={() => getFood('sushi1')}>Суши</li>
                             <li onClick={() => getFood('rolls')}>Роллы</li>
                             <li onClick={() => getFood('salads')}>Салаты</li>
                             <li onClick={() => getFood('deserts')}>Десерты</li>
-                            <li onClick={() => getFood('drinkS')} className={styles.drinks}>Напитки</li>
+                            <li onClick={() => getFood('beverage')} className={styles.drinks}>Напитки</li>
                         </ul>
                     </nav>
                 </div>

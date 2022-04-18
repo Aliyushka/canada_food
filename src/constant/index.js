@@ -293,50 +293,50 @@ export const desert = [
     }
 ]
 
-export const drinkS = [
-    {
-        id:0,
-        name:'Лимонад',
-        title:'лимон, вода кипяченая, сахар',
-        image:'https://img1.russianfood.com/dycontent/images_upl/10/sm_9478.jpg',
-        price: 60
-    },
-    {
-        id:1,
-        name:'Молочный коктейль',
-        title:' мороженое сливочное, молоко, шоколад',
-        image:'https://img1.russianfood.com/dycontent/images_upl/97/sm_96293.jpg',
-        price:80
-    },
-    {
-        id:2,
-        name:'Сок-пюре из овощей',
-        title:'помидоры, вода, лук репчатый, чеснок, перец чили, сахар, сок лайма, кинза, соль, семена горчицы, хрен, базилик, петрушка, соус острый',
-        image:'https://img1.russianfood.com/dycontent/images_upl/13/sm_12682.jpg',
-        price:100
-    },
-    {
-        id:3,
-        name:'Охлаждающий коктейль',
-        title:' виноград, яблоко, сок апельсиновый, лед',
-        image:'https://img1.russianfood.com/dycontent/images_upl/12/sm_11067.jpg',
-        price: 100
-    },
-    {
-        id:4,
-        name:'Апельсиновый лимонад / Безалкогольный крюшон',
-        title:'сахар, лимон, апельсин, сок апельсиновый, вода, сахар, лимон, апельсин, сок апельсиновый, вода, вода минеральная',
-        image:'https://img1.russianfood.com/dycontent/images_upl/10/sm_9095.jpg',
-        price: 110
-    },
-    {
-        id:5,
-        name:'Виноградный смузи',
-        title:'сок виноградный, йогурт натуральный, виноград красный',
-        image:'https://img1.russianfood.com/dycontent/images_upl/12/sm_11016.jpg',
-        price: 120
-    }
-]
+// export const drinkS = [
+//     {
+//         id:0,
+//         name:'Лимонад',
+//         title:'лимон, вода кипяченая, сахар',
+//         image:'https://img1.russianfood.com/dycontent/images_upl/10/sm_9478.jpg',
+//         price: 60
+//     },
+//     {
+//         id:1,
+//         name:'Молочный коктейль',
+//         title:' мороженое сливочное, молоко, шоколад',
+//         image:'https://img1.russianfood.com/dycontent/images_upl/97/sm_96293.jpg',
+//         price:80
+//     },
+//     {
+//         id:2,
+//         name:'Сок-пюре из овощей',
+//         title:'помидоры, вода, лук репчатый, чеснок, перец чили, сахар, сок лайма, кинза, соль, семена горчицы, хрен, базилик, петрушка, соус острый',
+//         image:'https://img1.russianfood.com/dycontent/images_upl/13/sm_12682.jpg',
+//         price:100
+//     },
+//     {
+//         id:3,
+//         name:'Охлаждающий коктейль',
+//         title:' виноград, яблоко, сок апельсиновый, лед',
+//         image:'https://img1.russianfood.com/dycontent/images_upl/12/sm_11067.jpg',
+//         price: 100
+//     },
+//     {
+//         id:4,
+//         name:'Апельсиновый лимонад / Безалкогольный крюшон',
+//         title:'сахар, лимон, апельсин, сок апельсиновый, вода, сахар, лимон, апельсин, сок апельсиновый, вода, вода минеральная',
+//         image:'https://img1.russianfood.com/dycontent/images_upl/10/sm_9095.jpg',
+//         price: 110
+//     },
+//     {
+//         id:5,
+//         name:'Виноградный смузи',
+//         title:'сок виноградный, йогурт натуральный, виноград красный',
+//         image:'https://img1.russianfood.com/dycontent/images_upl/12/sm_11016.jpg',
+//         price: 120
+//     }
+// ]
 
 
 export const products = [
