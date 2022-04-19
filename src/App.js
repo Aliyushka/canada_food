@@ -6,6 +6,9 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import Basket from "./pages/basket/Basket";
 import AppContext from "./contex";
+import delivery from "./pages/delivery/Delivery";
+import Contacts from "./pages/contacts/Contacts";
+import Delivery from "./pages/delivery/Delivery";
 
 const App = () => {
     const [card, setCard] = useState([])
@@ -32,8 +35,8 @@ const App = () => {
                     <Header/>
                     <Routes>
                         <Route path="/" element={<HomePage/>}/>
-                        <Route path="/delivery" element={<delivery/>}/>
-                        <Route path="/contacts" element={<contacts/>}/>
+                        <Route path="/delivery" element={<Delivery/>}/>
+                        <Route path="/contacts" element={<Contacts/>}/>
                         <Route path="/basket" element={<Basket/>}/>
                     </Routes>
                     <Footer/>
