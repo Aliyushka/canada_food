@@ -3,10 +3,13 @@
 .content{
     display: flex;
     position: relative;
-    height: 498px;
+    height: 500px;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid red;
     margin-top: 6rem;
+    width: 1200px;
+    margin-left: -15px;
+    border: 1px solid darkgreen;
+
 }
 
 .description{

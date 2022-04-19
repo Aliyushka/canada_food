@@ -6,7 +6,6 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import Basket from "./pages/basket/Basket";
 import AppContext from "./contex";
-import delivery from "./pages/delivery/Delivery";
 import Contacts from "./pages/contacts/Contacts";
 import Delivery from "./pages/delivery/Delivery";
 

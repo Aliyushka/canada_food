@@ -1,24 +1,28 @@
 .menu{
     border: 1px solid red;
     position: fixed;
-    width: 1195px;
+    width: 1200px;
+    height: 100px;
     background-color: white;
     z-index: 20;
-    margin-top: -13px;
+    margin-left: -15px;
+    margin-top: -3px;
 }
 
-.logo img{
+.logo{
     height: 40px;
+    margin-top: 10px;
 }
 .menu ul{
     padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 1.5%;
     font-size: 16px;
     font-family: 'Roboto',serif;
     font-weight: 400;
 }
+
 
 .menu li a{
     display: flex;
@@ -41,22 +45,30 @@ select{
 }
 .call img{
     padding-right: 10px;
+}
 
+.call p{
+    margin-top: 12px;
 }
 .names{
     display: flex;
-    gap: 62px;
+    gap: 60px;
     justify-content: space-between;
     align-items: center;
 }
 .count{
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
+.count img{
+    margin-right: 10px;
+
+}
 .count p{
     color: #FF583E;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
-    margin-left: 5px;
+    line-height: 30px;
+    margin-top: 15px;
+
 }

@@ -60,8 +60,8 @@ const PizzaMenu = () => {
                                 key={item.id}
                             />
                         ))}
+                        <button className={styles.more}>Показать еще</button>
                     </div>
-                    <button className={styles.more}>Показать еще</button>
                 </div>
             </div>
         </>
