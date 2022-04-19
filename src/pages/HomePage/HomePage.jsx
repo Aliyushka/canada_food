@@ -4,17 +4,24 @@ import MenuNewProducts from "../../components/MenuNewProducts/MenuNewProducts";
 import MenuForPizza from "../../components/MenuForPizza/MenuForPizza";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Review from "../../components/Review/Review";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+
+
 
 const HomePage = ({addToBasket, removeItemInBasket}) => {
     return (
         <>
-            <div>
+            <div className="container">
+                <Header/>
                 <Content/>
                 <MenuNewProducts/>
                 <MenuForPizza addToBasket={addToBasket} removeItemInBasket={removeItemInBasket}/>
                 <AboutUs/>
                 <Review/>
             </div>
+            <Footer/>
+
         </>
     );
 };

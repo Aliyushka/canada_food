@@ -1,12 +1,20 @@
 import React from 'react';
 import styles from './Delivery.module.css';
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+
 
 const Delivery = () => {
+
     return (
 
-        <div className={styles.delivery}>
-            Доставка
-        </div>
+        <>
+            <Header/>
+            <div className={styles.delivery}>
+                <p>Доставка</p>
+            </div>
+            <Footer/>
+        </>
     );
 };
 

@@ -8,6 +8,8 @@ import Basket from "./pages/basket/Basket";
 import AppContext from "./contex";
 import Contacts from "./pages/contacts/Contacts";
 import Delivery from "./pages/delivery/Delivery";
+import AdminMain from "./Admin/AdminMain.jsx/AdminMain";
+
 
 const App = () => {
     const [card, setCard] = useState([])
@@ -30,16 +32,13 @@ const App = () => {
             card,
         }}>
             <BrowserRouter>
-                <div className="container">
-                    <Header/>
                     <Routes>
                         <Route path="/" element={<HomePage/>}/>
                         <Route path="/delivery" element={<Delivery/>}/>
                         <Route path="/contacts" element={<Contacts/>}/>
                         <Route path="/basket" element={<Basket/>}/>
+                        <Route path="/admin" element={<AdminMain/>}/>
                     </Routes>
-                    <Footer/>
-                </div>
             </BrowserRouter>
         </AppContext.Provider>
     );

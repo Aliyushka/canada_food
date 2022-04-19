@@ -3,14 +3,15 @@
     height: 152px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 88px;
+    justify-content: center;
     gap: 4rem;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .companyLogo{
     display: flex;
-    margin-top:30px ;
+    margin-top:20px ;
 }
 
 .contacts{
