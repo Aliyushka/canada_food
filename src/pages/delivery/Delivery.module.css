@@ -1,1 +1,16 @@
+.deliveryMain{
+    width: 1200px;
+    margin: 0 auto;
+}
 
+.delivery{
+    height: 100vh;
+    border: 3px solid red;
+    margin-left: -14px;
+    margin-right: 12px;
+}
+
+.deliveryText{
+    margin-top: 6rem;
+    border: 1px solid green;
+}

@@ -77,7 +77,7 @@
     color: #254F4C;
     margin-left: 8px;
     margin-right: 5px;
-    margin-top: 18px;
+    margin-top: 15px;
 }
 
 .count button {
@@ -101,7 +101,7 @@
     letter-spacing: 1px;
     transition: .4s;
     cursor: pointer;
-    /*margin-top: 1rem;*/
+    margin-bottom: 0;
 }
 .btn:hover{
     background-color: #FF583E;
@@ -111,3 +111,4 @@
     transition: .4s;
     transform: scale(1.1);
 }
+

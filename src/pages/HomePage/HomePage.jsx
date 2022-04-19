@@ -1,10 +1,11 @@
 import React from 'react';
+import Header from "../../components/Header/Header";
 import Content from "../../components/Content/Content";
 import MenuNewProducts from "../../components/MenuNewProducts/MenuNewProducts";
 import MenuForPizza from "../../components/MenuForPizza/MenuForPizza";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Review from "../../components/Review/Review";
-import Header from "../../components/Header/Header";
+
 import Footer from "../../components/Footer/Footer";
 
 

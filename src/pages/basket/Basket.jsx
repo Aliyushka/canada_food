@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import s from "./Basket.module.css";
 import {NavLink} from "react-router-dom";
 import AppContext from "../../contex";
+import Header from "../../components/Header/Header";
 
 const Basket = () => {
     const {deleteFromBasket, card} = useContext(AppContext)

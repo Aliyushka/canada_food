@@ -1,3 +1,30 @@
+.contactsMain{
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .contacts{
+    border: 3px solid red;
+    margin-left: -14px;
+    margin-right: 12px;
+}
+
+.contactsText{
     margin-top: 6rem;
+    border: 1px solid green;
+    display: flex;
+}
+
+
+.contact{
+    justify-content: center;
+}
+.call img {
+    width: 200px;
+    height: 200px;
+}
+
+.address img {
+    width: 200px;
+    height: 200px;
 }
