@@ -60,124 +60,152 @@
   "burgers": [
     {
       "id":0,
-      "name":"Чизбургер",
-      "title":"Булочки для гамбургеров, Фарш говяжий , Сыр плавленный в пластинках, Кетчуп",
-      "image":"https://img.iamcook.ru/old/upl/recipes/middle/u-23785075eb7c23f488e26287a15fbf92.jpg",
+      "name":"ДОНЕР БУРГЕР",
+      "title":"Домашняя булочка, мясо донер из говядины, помидоры, салат, карамелизированный лук, шеф-соус",
+      "image":"https://chefrestoran.ru/dostavka/burger/wp-content/uploads/2021/12/unnamed-file-2-scaled.jpg",
       "price":120
     },
     {
       "id":1,
-      "name":"Чикенбургер",
-      "title":"Булочка, Куриный фарш,Лук в фарш, Лук для подачи, Чеснок - 1-2 зубчика,Яйцо крупное - 1 шт.",
-      "image":"https://img.iamcook.ru/old/upl/recipes/middle/u-f57d296ea7d66597625d5826c0552c3d.jpg",
+      "name":"КЛАСИЧЕСКИЙ БУРГЕР",
+      "title":"Домашняя булочка, котлета из мраморной говядины, помидоры, салат, карамелизированный лук, шеф-соус",
+      "image":"https://chefrestoran.ru/dostavka/burger/wp-content/uploads/2021/12/unnamed-file-1-scaled.jpg",
       "price":130
     },
     {
       "id":2,
-      "name":"Гамбургер",
-      "title":"Булочки для гамбургеров, Говяжий фарш , Лук салатный, Салат зеленый - 100 г",
-      "image":"https://img.iamcook.ru/old/upl/recipes/middle/u-58eaf66f8bbbfb3055262e31a8f8f396.jpg",
+      "name":"ЛУКУМ БУРГЕР",
+      "title":"Домашняя булочка, вырезка мраморной говядины, сыр, карамелизированный лук, шеф-соус",
+      "image":"https://chefrestoran.ru/dostavka/burger/wp-content/uploads/2021/11/Lukum_burger-900__-scaled.jpg",
       "price":100
     },
     {
       "id":3,
-      "name":"Домашний бургер",
-      "title":"Говядина (лопатка с жирком), Булочки для бургеров, Сыр тостовый,Салат листовой",
-      "image":"https://img.iamcook.ru/old/upl/recipes/middle/u-df20b6791f69fff60504f6527f5d8422.JPG",
+      "name":"ЧИЗБУРГЕР",
+      "title":"Домашняя булочка, котлета из мраморной говядины, сыр, помидоры, салат, карамелизированный лук, медово-горчичный соус",
+      "image":"https://chefrestoran.ru/dostavka/burger/wp-content/uploads/2021/11/heeseburger_-600__-scaled.jpg",
       "price":110
     },
     {
       "id":4,
-      "name":"Крабсбургер",
-      "title":"Булочки с кунжутом, Огурцы маринованные (пикули),Салат,Сыр,Томаты,Маринованный лук",
-      "image":"https://img.iamcook.ru/old/upl/recipes/middle/u6009-f2d73151aa5a5c8b4e6928fb864ea634.jpg",
+      "name":"ШЕФ БУРГЕР",
+      "title":"Домашняя булочка, котлета из мраморной говядины, копченая говядина, сыр, помидоры, салат, карамелизированный лук, шеф-соус",
+      "image":"https://chefrestoran.ru/dostavka/burger/wp-content/uploads/2021/11/650__-1-scaled.jpg",
       "price":120
     },
     {
       "id":5,
-      "name":"Омлет-бургер",
-      "title":"Булочки для бургеров, яйцо,Сыр,Листья салата,Помидор",
-      "image":"https://img.iamcook.ru/2018/upl/recipes/middle/u10160-286cd73df5b84ab9d6d387810f3c9a80.JPG",
+      "name":"ТОМБИК БУРГЕР",
+      "title":"Булочка томбик, мясо говядины и баранины, помидоры, соленые огурцы, картофель по-деревенски, шеф-соус",
+      "image":"https://chefrestoran.ru/dostavka/burger/wp-content/uploads/2021/11/Tombik_doner_550__-1-scaled.jpg",
+      "price":130
+    },
+    {
+      "id":6,
+      "name":"ЧИКЕНБУРГЕР",
+      "title":"Булочка, овощи, соус. В блюдо также может включаться сыр, ананасы.",
+      "image":"https://chefrestoran.ru/wp-content/uploads/2018/10/333977423.jpg",
+      "price":130
+    },
+    {
+      "id":7,
+      "name":"ФИШБУРГЕР",
+      "title":"Котлеты, жареное филе или паштет. Блюдо также содержит булочки, овощи и соус.",
+      "image":"https://chefrestoran.ru/wp-content/uploads/2018/10/549443638.jpg",
       "price":130
     }
   ],
-  "Sushi": [
+  "sushi1": [
     {
       "id":0,
-      "name":"4 сезона",
-      "title":"Горячий краб, Горячий лосось, Горячая креветка, Горячая курица.",
-      "image":"https://wasabi.kg/wp-content/uploads/2021/09/4-sezona.jpg",
-      "price":"980 сом"
+      "name":"Нигири",
+      "title":"Рис, лосось, тунец",
+      "image":"https://kotosushi.com.ua/storage/content/7jCw53A9lLrnKfeTFJxFAl8XdOiB84XudEbhxfip.jpeg",
+      "price": 320
     },
     {
       "id":1,
-      "name":"Запеченный хосомаки",
-      "title":"Ролл лосось, Ролл краб, Ролл угорь, Ролл креветка, Ролл сыр.",
-      "image":"https://wasabi.kg/wp-content/uploads/2021/09/zapechennyj-hosomaki-280x280.jpg",
-      "price":"650 сом"
+      "name":"Сашими",
+      "title":"Рыбы или морепродукты",
+      "image":"https://kotosushi.com.ua/storage/content/fjszq9CiWek1nD1w09mJ260CDEabWxmLCP87gKLZ.jpeg",
+      "price": 650
     },
     {
       "id":2,
-      "name":"Классика",
-      "title":"Филадельфия, Канада, Калифорния.",
-      "image":"https://wasabi.kg/wp-content/uploads/2021/09/klassika.jpg",
-      "price":"1130 сом"
+      "name":"Маки",
+      "title":"Рис и начинку заворачивают водоросли",
+      "image":"https://kotosushi.com.ua/storage/content/kdbxeQSuE9RB3dTu5hWMO6Sv4c4FiXdslc3lALbh.jpeg",
+      "price": 1100
     },
     {
       "id":3,
-      "name":"Романтика",
-      "title":"Филадельфия, Калифорния, Ролл краб под сыром, Хот лосось 4 шт, Фудзияма",
-      "image":"https://wasabi.kg/wp-content/uploads/2021/09/romantika.jpg",
-      "price":"1300 сом"
+      "name":"Темаки",
+      "title":"Курица, рыба, овощи",
+      "image":"https://kotosushi.com.ua/storage/content/lv1taq2toiIXGhVhkiY2GNgO0MppwsLxft4hUSE4.jpeg",
+      "price": 1300
     },
     {
       "id":4,
-      "name":"Сет 1",
-      "title":"Филадельфия 4 шт, Канада 4 шт, Нью-Йорк 4 шт, Бруклин 4 шт.",
-      "image":"https://wasabi.kg/wp-content/uploads/2021/09/set-1.jpg",
-      "price":"730 сом"
+      "name":"Урамаки",
+      "title":"Рыбное филе, слайсы овощей, рисовый рулет  в икре тобико или кунжуте",
+      "image":"https://kotosushi.com.ua/storage/content/ZXal6YhrbSp08ctYx3n6zxQeoRd5QLJTrGflCQJ8.png",
+      "price": 730
     },
     {
       "id":5,
       "name":"Хосомаки",
-      "title":"Ролл краб, Ролл лосось, Ролл огурец, Ролл сыр.",
-      "image":"https://wasabi.kg/wp-content/uploads/2021/09/hosomaki.jpg",
-      "price":"480 сом"
+      "title":"Лосось, огурцы, рис",
+      "image":"https://kotosushi.com.ua/storage/content/93Ca31HGu7Y4CxPu1a07Ko6axGwvGgagr3uVgmtk.jpeg",
+      "price": 480
+    },
+    {
+      "id":6,
+      "name":"Чираши-суши",
+      "title":"Овощи и морепродукты.",
+      "image":"https://kotosushi.com.ua/storage/content/x2OJxDixfZTjt28wCrAl8jaByQjjqG2GbVHnBrOD.jpeg",
+      "price": 480
+    },
+    {
+      "id":7,
+      "name":"Футомаки",
+      "title":"Лосось, огурцы, рис, авокадо",
+      "image":"https://kotosushi.com.ua/storage/content/8V4ZAP88RZ4q3p5nxILOXJ1X8MZcmgyVAHctZdqu.jpeg",
+      "price": 480
     }
   ],
   "rolls": [
     {
       "id":0,
       "name":"Кунг Лао",
-      "title":"Лосось, тигровые креветки в панко, сурими \"снежный краб\", унаги соус, огурец.",
+      "title":"Лосось, креветки, сурими, унаги соус, огурец.",
       "image":"https://kotosushi.com.ua/storage/products/438.png?1648932896",
       "price":700
     },
     {
       "id":1,
       "name":"Сезам с тунцом и дайконом",
-      "title":"Тунец маринованный в лаймовом маринаде, дайкон, огурец. Ролл запанирован в кунжуте, украшен \"чукой\", икрой \"тобико\" и рисовыми",
+      "title":"Тунец, дайкон, огурец, рис",
       "image":"https://kotosushi.com.ua/storage/products/425.png?1648932895",
       "price":800
     },
     {
       "id":2,
       "name":"Сыр и лосось под сладко острым соусом",
-      "title":"Лосось маринованный с сладко соленом соусе, сыр \"филадельфия\", соус свит чили + манго соус и рисовые шарики.",
+      "title":"Лосось, сыр,  соус свит чили + манго соус и рисовые шарики.",
       "image":"https://kotosushi.com.ua/storage/products/426.png?1648932896",
       "price":750
     },
     {
       "id":3,
       "name":"Спайси ролл с обожженным тунцом",
-      "title":"Опаленный тунец, манго, сыр филадельфия, соевая спаржа. Как украшение мы добавили соусы: спайси и унаги, а еще",
+      "title":"Опаленный тунец, манго, сыр филадельфия, соевая спаржа",
       "image":"https://kotosushi.com.ua/storage/products/429.png?1648932896",
       "price":780
     },
     {
       "id":4,
       "name":"Черный дракон 2022",
-      "title":"Угорь, лосось, сыр \"филадельфия\", авокадо, соус унаги, икра \"тобико\" черная.",
+      "title":"Угорь, лосось, сыр авокадо, соус унаги, икра черная.",
       "image":"https://kotosushi.com.ua/storage/products/447.png?1648932896",
       "price":820
     },
@@ -187,97 +215,140 @@
       "title":"Спелый и сладкий манго, заправленный соусом из манго и апельсина!",
       "image":"https://kotosushi.com.ua/storage/products/366.png?1648932895",
       "price":900
+    },
+    {
+      "id":6,
+      "name":"Мегафила с тунцом",
+      "title":"Тунец, сыр филадельфия, огурец, соус свит чили, кунжут.",
+      "image":"https://kotosushi.com.ua/storage/products/439.png?1650175919",
+      "price":900
+    },
+    {
+      "id":7,
+      "name":"Красный ниндзя",
+      "title":"Лосось, креветки тигровые в панко, тунец, тыква кампио, огурец",
+      "image":"https://kotosushi.com.ua/storage/products/398.png?1650175919",
+      "price":900
     }
   ],
   "salads":[
     {
       "id":0,
-      "name":"Салат \"Греческий\"",
-      "title":"огурец, помидоры, перец болгарский, маслины чёрные без косточек, лук, сыр фета, петрушка, травы, масло оливковое",
-      "img":"https://img1.russianfood.com/dycontent/images_upl/13/sm_12051.jpg",
+      "name":"Цезарь с куриным филе",
+      "title":"Лисьтя салата, соус цезарь, пармезан, чесночными сухариками, черри",
+      "image":"https://media.maximilians.ru/krs/cuisine/salat-s-kopchenoj-korejkoj-salatom-ajsberg-ovoshhami-yajtsom-i-suharikami-pod-sousom-ranch/tsezar-min.jpg",
       "price":180
     },
     {
       "id":1,
-      "name":"Cалат Цезарь",
-      "title":" куриная грудка, яйца отварные, сухарики, сыр твёрдый, помидоры черри, листья салата, соль, горчица, чеснок, лимон, масло оливковое",
-      "img":"https://img1.russianfood.com/dycontent/images_upl/15/sm_14683.jpg",
+      "name":"Греческий салат",
+      "title":"Огурцы,черри, перец, оливки, сыр фета",
+      "image":"https://media.maximilians.ru/krs/cuisine/grecheskij-traditsionnyj-salat-iz-svezhih-ovoshhej-s-syrom-feta/grecheskij.jpg",
       "price":250
     },
     {
       "id":2,
-      "name":"Овощной салат с кунжутом, по-корейски",
-      "title":"огурцы свежие, морковь, перец сладкий, лук зелёный, чеснок, перец чили, зелень укропа, кунжут, соус соевый, уксус яблочный, сахар, масло подсолнечное, соль...\n",
-      "img":"https://img1.russianfood.com/dycontent/images_upl/357/sm_356553.jpg",
+      "name":"Салат-микс с лососем слабого посола",
+      "title":"С салатными листьями и овощами, чесночным багетом под соусом из баварской горчицы",
+      "image":"https://media.maximilians.ru/krs/cuisine/ovoshhnoj-salat-s-govyadinoj-gril/salat-s-lososemslabogo-posola.jpg",
       "price":180
     },
     {
       "id":3,
-      "name":"Слоёный салат «Грибная поляна» с курицей",
-      "title":" куриное филе, шампиньоны маринованные, картофель, морковь, огурцы маринованные, сыр твёрдый, лук зелёный, зелень петрушки, соль, майонез",
-      "img":"https://img1.russianfood.com/dycontent/images_upl/431/sm_430474.jpg",
+      "name":"Салат по-немецки",
+      "title":"Картофель, ветчина, маринованные огурцы, черри, майонез",
+      "image":"https://media.maximilians.ru/krs/cuisine/kartofelnyj-salat-s-bitochkami-iz-indejki-i-svezhimi-ovoshhami-pod-jogurtovo-gorchichnoj-zapravkoj/salat-po-nemetski-min.jpg",
       "price":250
     },
     {
       "id":4,
-      "name":"Домашний салат из свеклы и картофеля",
-      "title":"1 свекла, 5 картофелин, 2 моркови, зелень, чеснок, специи, майонез.",
-      "img":"https://lafoy.ru/photo_l/foto-1605-1.jpg",
+      "name":"Салат-микс с ростбифом",
+      "title":"С салатными листьями и овощами, чесночным багетом под соусом из баварской горчицы",
+      "image":"https://media.maximilians.ru/krs/cuisine/salat-s-moreproduktami-2-2/salat-s-rostbifom-min.jpg",
       "price":100
     },
     {
       "id":5,
-      "name":"ПП салат с кальмаром Подробнее: https://povar.ru/menu/prostye_salaty/",
-      "title":"Кальмары  Огурец  Яйцо Лук красный Зелень   Горчица  ",
-      "img":"https://img.povar.ru/list/35/3f/80/c4/pp_salat_s_kalmarom-552494.JPG",
+      "name":"Салат с обжаренной говядиной",
+      "title":"С болгарским перцем, малосольными огурчиками и луковыми хлопьями",
+      "image":"https://media.maximilians.ru/krs/cuisine/salat-s-obzharennoj-govyadinoj/salat-s-obzharennoj-govyadinoj-min.jpg",
+      "price":130
+    },
+    {
+      "id":6,
+      "name":"Салат с бужениной",
+      "title":"С салатом айсберг, свежими овощами, перцем, яйцом, сухариками под соусом «сливочный хрен»",
+      "image":"https://media.maximilians.ru/krs/cuisine/salat-s-buzheninoj/salat-s-buzheninoj.jpg",
+      "price":130
+    },
+    {
+      "id":7,
+      "name":"Салатный микс с кальмаром",
+      "title":"С картофельными кубиками и заправкой свит чили",
+      "image":"https://media.maximilians.ru/krs/cuisine/salat-s-komandorskim-kalmarom/salatnyj-miks-s-kalmarom-min.jpg",
       "price":130
     }
   ],
   "deserts":[
     {
       "id":0,
-      "name":"Детское пирожное \"Киндер Милк-Слайс\"",
-      "title":"яйца, масло растительное, мука, сахар, мёд, какао-порошок, молоко, разрыхлитель для теста, сметана, молоко сгущенное, молоко, мёд, сахар, желатин, ванилин",
-      "image":"https://img1.russianfood.com/dycontent/images_upl/214/sm_213949.jpg",
+      "name":"Брусничный торт",
+      "title":"С нежным кремом из сыра",
+      "image":"https://media.maximilians.ru/ekb/cuisine/brusnichnyj-tort/brusn-tort-380x270.jpg",
       "price":80
     },
     {
       "id":1,
-      "name":"Шоколадные пирожные со взбитыми сливками",
-      "title":" маргарин, яйца, какао-порошок, кипяток, сахар, мука, разрыхлитель, масло растительное, сливки, стружка, малина",
-      "image":"https://img1.russianfood.com/dycontent/images_upl/73/sm_72239.jpg",
+      "name":"Шоколадный фондан",
+      "title":"С пломбиром, клубникой, топингом и мятой",
+      "image":"https://media.maximilians.ru/ekb/cuisine/brusnichnyj-tort/shok-fon-380x270.jpg",
       "price":75
     },
     {
       "id":2,
-      "name":"Пирожное \"Жаждущая монашка",
-      "title":"яйца, сахар, мука, разрыхлитель, орех, сахар, какао, масло, ваниль, вода, ром, коньяк",
-      "image":"https://img1.russianfood.com/dycontent/images_upl/10/sm_9850.jpg",
+      "name":"Лимонный пирог с меренгами",
+      "title":"яйца, сахар, мука, разрыхлитель, лимон",
+      "image":"https://media.maximilians.ru/ekb/cuisine/brusnichnyj-tort/lim-pirog-380x270.jpg",
       "price":70
     },
     {
       "id":3,
-      "name":"Шоколадные пирожные \"Королевские",
-      "title":"шоколад, масло сливочное, яйца, сахар, мука, разрыхлитель, пудра сахарная",
-      "image":"https://img1.russianfood.com/dycontent/images_upl/15/sm_14453.jpg",
+      "name":"Брауни шоколадный",
+      "title":"С обжаренным грецким орехом",
+      "image":"https://media.maximilians.ru/ekb/cuisine/brusnichnyj-tort/brauni-380x270.jpg",
       "price":80
     },
     {
       "id":4,
-      "name":"Пирожные \"Трубочки\" с заварным кремом",
-      "title":"тесто слоеное, молоко, сахар, масло сливочное, соль, сахар ванильный, крахмал, мука, яйца, желток, пудра сахарная",
-      "image":"https://img1.russianfood.com/dycontent/images_upl/214/sm_213766.jpg",
+      "name":"Чизкейк",
+      "title":"Нежный сливочный десерт на основе сыра филадельфия",
+      "image":"https://media.maximilians.ru/ekb/cuisine/brusnichnyj-tort/chiz-k-380x270.jpg",
       "price":80
     },
     {
-      "id":5,
-      "name":"Капкейки \"Ёлочки\" с белковым кремом",
-      "title":"масло сливочное, сахар, яйца, молоко, мука, разрыхлитель, ванилин, яйца, сахар, лимонная кислота, посыпка, краситель",
-      "image":"https://img1.russianfood.com/dycontent/images_upl/569/sm_568599.jpg",
+      "id": 5,
+      "name": "Маковый торт",
+      "title": "Сахар, яйца, молоко, мука, разрыхлитель, краситель",
+      "image": "https://media.maximilians.ru/ekb/cuisine/makovo-apelsinovyj-pirog/Makovo-apelsinovyj-pirog-min-380x270.jpg",
+      "price": 80
+    },
+    {
+      "id":6,
+      "name":"Фруктовая ваза",
+      "title":"Груши, виноград, апельсины, яблоки, ананас, киви, ягоды",
+      "image":"https://media.maximilians.ru/ekb/global/2017/10/760h540-Fruktovaya-vaza-min-380x270.jpg",
+      "price":80
+    },
+    {
+      "id":7,
+      "name":"Наполеон",
+      "title":"С клубничным соусом",
+      "image":"https://media.maximilians.ru/ekb/cuisine/napoleon/napoleon-min.jpg",
       "price":80
     }
   ],
-  "drinkS":[
+
+  "beverage":[
     {
       "id":0,
       "name":"Лимонад",
@@ -295,7 +366,7 @@
     {
       "id":2,
       "name":"Сок-пюре из овощей",
-      "title":"помидоры, вода, лук репчатый, чеснок, перец чили, сахар, сок лайма, кинза, соль, семена горчицы, хрен, базилик, петрушка, соус острый",
+      "title":"помидоры, вода, лук репчатый, хрен, базилик, петрушка",
       "image":"https://img1.russianfood.com/dycontent/images_upl/13/sm_12682.jpg",
       "price":100
     },
@@ -308,8 +379,8 @@
     },
     {
       "id":4,
-      "name":"Апельсиновый лимонад / Безалкогольный крюшон",
-      "title":"сахар, лимон, апельсин, сок апельсиновый, вода, сахар, лимон, апельсин, сок апельсиновый, вода, вода минеральная",
+      "name":"Апельсиновый лимонад",
+      "title":"сахар, лимон, апельсин, сок апельсиновый, вода, сахар",
       "image":"https://img1.russianfood.com/dycontent/images_upl/10/sm_9095.jpg",
       "price":110
     },
@@ -319,6 +390,20 @@
       "title":"сок виноградный, йогурт натуральный, виноград красный",
       "image":"https://img1.russianfood.com/dycontent/images_upl/12/sm_11016.jpg",
       "price":120
+    },
+    {
+      "id":6,
+      "name":"Холодный имбирный чай",
+      "title":"Персик, имбирь, чай",
+      "image":"https://grandkulinar.ru/uploads/posts/2018-08/1534607359_xolodnyj-imbirnyj-chaj-s-persikom.jpg",
+      "price":60
+    },
+    {
+      "id":7,
+      "name":"Вишневый кулер",
+      "title":"каркаде, вишня, чай",
+      "image":"https://grandkulinar.ru/uploads/posts/2018-08/1534607374_vishnevyj-kuler.jpeg",
+      "price":80
     }
   ],
 

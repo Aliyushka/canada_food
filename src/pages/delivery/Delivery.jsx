@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Delivery.module.css';
 
 const Delivery = () => {
     return (
-        <div style={{margin: '6rem'}}>
+        <div className={styles.delivery}>
             Доставка
         </div>
     );

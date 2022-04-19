@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Contacts.module.css';
 
 const Contacts = () => {
     return (
-        <div style={{margin: '6rem'}}>
+        <div className={styles.contacts}>
             Contacts
         </div>
     );
