@@ -5,8 +5,9 @@
     position: relative;
     height: 498px;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid red;
     margin-top: 6rem;
+    width: 1200px;
+    margin-left: -15px;
 }
 
 .description{

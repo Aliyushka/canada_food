@@ -101,28 +101,18 @@ li:hover{
     font-size: 15px;
     color: #FFFFFF;
 }
-/*.basket{*/
-/*    width: 200px;*/
-/*    height: 48px;*/
-/*    border-radius: 40px;*/
-/*    background-color: #FF583E;*/
-/*    color: #FFFFFF;*/
-/*    border: solid 1px #FF583E;*/
-/*    text-transform: uppercase;*/
-/*    font-size: 14px;*/
-/*    font-weight: 700;*/
-/*    font-family: Roboto,serif;*/
-/*    letter-spacing: 1px;*/
-/*}*/
+
+/*******************pizzaBlock***************/
 
 .pizzaBlock{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 10px;
     justify-content: space-between;
     align-items: center;
     width: 1152px;
     text-align: center;
+    border: 1px solid darkgreen;
 }
 .select{
     display: flex;
