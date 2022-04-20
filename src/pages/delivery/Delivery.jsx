@@ -4,7 +4,6 @@ import Header from "../../components/Header/Header";
 import {delivery, delivery2, delivery3} from "../../constant";
 import Footer from "../../components/Footer/Footer";
 
-
 const Delivery = () => {
     return (
         <div className={styles.deliveryPage}>

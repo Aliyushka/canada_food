@@ -3,19 +3,39 @@ import styles from './MenuNewProducts.module.css'
 import img from "../../media/second.svg";
 import AppContext from "../../contex";
 
-const MenuNewProducts = () => {
+const CountProducts = ({item}) => {
+    const [number, setNumber] = useState(1)
     const {addToBasket} = useContext(AppContext)
-    const [count, setCount] = useState(0)
-    const toggleBtn = (item) => {
+    const increment = () => {
+        setNumber(number + 1)
+    }
+    const decrement = () => {
+        if (number >= 1) {
+            setNumber(number - 1)
+        }
+    }
+    const add = (item) => {
         addToBasket(item)
     }
+    return <div className={styles.burger}>
+        key={item.id}
+        <img className={styles.burgerImage} src={item.image}/>
+        <p className={styles.cheeseburger}>{item.name}</p>
+        <p className={styles.composition}>{item.title}</p>
+        <p className={styles.price}>{item.price}</p>
+        <div className={styles.btn}>
+            <button onClick={decrement} className={styles.minus}>-</button>
+            <p className={styles.number}>{number}</p>
+            <button onClick={increment} className={styles.plus}>+</button>
+        </div>
+        <button onClick={() => add(item)} className={styles.basket}>В корзину</button>
+    </div>
+}
+
+const MenuNewProducts = () => {
     const [food, setFood] = useState([])
-    function increment() {
-        setCount(count + 1)
-    }
-    function decrement() {
-        setCount(count - 1)
-    }
+
+
     const getFood = (foodUrl) => {
         const url = 'http://localhost:3000/' + foodUrl
         fetch(url)
@@ -26,7 +46,6 @@ const MenuNewProducts = () => {
     useEffect(() => {
         getFood('burger')
     }, [])
-
 
     return (
         <>
@@ -48,22 +67,9 @@ const MenuNewProducts = () => {
                 </div>
 
                 <div className={styles.map}>
-                    {
-                        food.map((item, index) => {
-                            return <div className={styles.burger} key={index}>
-                                <img className={styles.burgerImage} src={item.image}/>
-                                <p className={styles.cheeseburger}>{item.name}</p>
-                                <p className={styles.composition}>{item.desc}</p>
-                                <p className={styles.price}>{item.price}</p>
-                                <div className={styles.btn}>
-                                    <button onClick={decrement} className={styles.minus}>-</button>
-                                    <p className={styles.number}>{count}</p>
-                                    <button onClick={increment} className={styles.plus}>+</button>
-                                </div>
-                                <button className={styles.basket} onClick={() => toggleBtn(item.name)}>В корзину</button>
-                            </div>
-                        })
-                    }
+                    {food.map((item, index) => (
+                        <CountProducts key={index} item={item}/>
+                    ))}
                 </div>
             </div>
         </>

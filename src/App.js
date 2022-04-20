@@ -10,15 +10,10 @@ import AdminMain from "./Admin/AdminMain.jsx/AdminMain";
 import Login from "./Admin/Login/Login";
 import Pizza from "./Admin/Products/Pizza"
 
-
 const App = () => {
     const [card, setCard] = useState([])
     const addToBasket = (item) => {
-        if (card.find(i => i.id === item.id)) {
-            alert('Вы уже добавили')
-        } else {
-            setCard([...card, item])
-        }
+        setCard([...card, item])
     }
 
     const deleteFromBasket = (id) => {
@@ -32,15 +27,15 @@ const App = () => {
             card,
         }}>
             <BrowserRouter>
-                    <Routes>
-                        <Route path="/" element={<HomePage/>}/>
-                        <Route path="/delivery" element={<Delivery/>}/>
-                        <Route path="/contacts" element={<Contacts/>}/>
-                        <Route path="/basket" element={<Basket/>}/>
-                        <Route path="/admin/main" element={<AdminMain/>}/>
-                        <Route path="/admin/login" element={<Login/>}/>
-                        <Route path="/admin/pizza" element={<Pizza/>}/>
-                    </Routes>
+                <Routes>
+                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/delivery" element={<Delivery/>}/>
+                    <Route path="/contacts" element={<Contacts/>}/>
+                    <Route path="/basket" element={<Basket/>}/>
+                    <Route path="/admin/main" element={<AdminMain/>}/>
+                    <Route path="/admin/login" element={<Login/>}/>
+                    <Route path="/admin/pizza" element={<Pizza/>}/>
+                </Routes>
             </BrowserRouter>
         </AppContext.Provider>
     );

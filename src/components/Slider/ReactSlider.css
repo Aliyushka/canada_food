@@ -1,0 +1,155 @@
+#main-slider-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 49px 0 88px 0;
+}
+
+#slider{
+    white-space: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+#slider::-webkit-scrollbar{
+    display: none;
+}
+
+#main-slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.slider-card-title, .slider-card-description{
+    margin: 5px 0 5px 10px;
+}
+
+.slider-card-title{
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+.slider-card img{
+    width: 100px;
+
+}
+
+.slider-icon.left, .slider-icon.right {
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0.5;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.slider-icon.left{
+    left: 0;
+    z-index: 99;
+}
+
+.slider-icon.right{
+    right: 0;
+}
+
+.slider-icon.left:hover, .slider-icon.right:hover{
+    opacity: 1;
+}
+
+.slider-card{
+    width: 248px;
+    height: 304px;
+    text-align: center;
+    background: #FFFDFD;
+    border: 2px solid #1D3130;
+    box-sizing: border-box;
+    border-radius: 40px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+
+}
+
+.slider-card img{
+    width: 80px;
+    height: 85px;
+}
+
+.slider-card-description{
+    width: 50px;
+    height: 150px;
+}
+
+
+.parent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 88px;
+
+}
+.pen{
+    display: flex;
+
+}
+.group{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 18px;
+    top: 24px;
+}
+
+.text{
+    margin: 0;
+    width: 216px;
+    text-align: center;
+}
+
+.userName{
+    color: #3B7976;
+    font-family: 'Roboto',serif;
+}
+
+.date{
+    color: #3B7976;
+    font-family: 'Roboto',serif;
+    margin-top: 90px;
+}
+
+.vector{
+    width: 85px;
+    height: 80px;
+}
+.userReview{
+    font-family: 'Roboto',serif;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    color: #254F4C;
+    margin-left: 30px;
+}
+
+.userComments{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1102px;
+}
+
+.pen img{
+    width: 30px;
+    height: 30px;
+}
+
+.review{
+    margin-top: 56px;
+}
