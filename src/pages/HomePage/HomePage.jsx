@@ -5,7 +5,6 @@ import MenuNewProducts from "../../components/MenuNewProducts/MenuNewProducts";
 import MenuForPizza from "../../components/MenuForPizza/MenuForPizza";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import Review from "../../components/Review/Review";
-
 import Footer from "../../components/Footer/Footer";
 
 

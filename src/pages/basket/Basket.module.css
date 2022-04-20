@@ -1,15 +1,25 @@
-.basket{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10rem;
+.basketPage{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid red;
 }
+
 .main{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     gap: 5rem;
     padding: 1rem 4rem;
+    border: 1px solid blue;
 }
+.basket{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    border: 1px solid green;
+}
+
 .basket img{
     width: 200px;
 }
@@ -24,7 +34,7 @@
     margin-top: 6rem;
 }
 .empty strong{
-    font-size: 40px;
+    font-size: 20px;
 }
 .empty button{
     padding: 8px 14px;

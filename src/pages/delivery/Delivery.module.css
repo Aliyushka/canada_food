@@ -1,16 +1,87 @@
-.deliveryMain{
+.deliveryPage{
     width: 1200px;
     margin: 0 auto;
 }
 
 .delivery{
-    height: 100vh;
-    border: 3px solid red;
+    height: 1100px;
+    border: 1px solid lightgoldenrodyellow;
     margin-left: -14px;
     margin-right: 12px;
 }
 
-.deliveryText{
-    margin-top: 6rem;
-    border: 1px solid green;
+.deliveryMain h1{
+    margin-left: 38%;
+    justify-content: center;
+    margin-top: 7rem;
+    font-family: Roboto,serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: red;
 }
+
+.deliveryBlock{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deliveryMap img{
+    width: 120px;
+    height: 80px;
+}
+
+.deliveryMap{
+    display: flex;
+    margin: 20px 15px;
+    position: relative;
+}
+.title{
+    width: 150px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.next{
+    margin-top: 20px;
+    color: blue;
+}
+
+.deliveryMain2 h1{
+    margin-left: 27%;
+    margin-top: 2rem;
+    font-family: Roboto,serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #254F4C;
+}
+
+.deliveryBlock2{
+    display: flex;
+    background-color: lightgoldenrodyellow;
+}
+
+.delivery2{
+    width: 250px;
+    justify-content: center;
+    margin-left: 3%;
+}
+.delivery2 img{
+    width: 60px;
+    height: 50px;
+    margin: 30px 80px;
+}
+.delivery2 p{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+}
+
+.deliveryMain3 h1{
+    margin-left: 40%;
+    margin-top: 2rem;
+    font-family: Roboto,serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #254F4C;
+}
+
