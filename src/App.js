@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from "react";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import "./App.css"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
@@ -9,6 +7,8 @@ import AppContext from "./contex";
 import Contacts from "./pages/contacts/Contacts";
 import Delivery from "./pages/delivery/Delivery";
 import AdminMain from "./Admin/AdminMain.jsx/AdminMain";
+import Login from "./Admin/Login/Login";
+import Pizza from "./Admin/Products/Pizza"
 
 
 const App = () => {
@@ -37,7 +37,9 @@ const App = () => {
                         <Route path="/delivery" element={<Delivery/>}/>
                         <Route path="/contacts" element={<Contacts/>}/>
                         <Route path="/basket" element={<Basket/>}/>
-                        <Route path="/admin" element={<AdminMain/>}/>
+                        <Route path="/admin/main" element={<AdminMain/>}/>
+                        <Route path="/admin/login" element={<Login/>}/>
+                        <Route path="/admin/pizza" element={<Pizza/>}/>
                     </Routes>
             </BrowserRouter>
         </AppContext.Provider>
