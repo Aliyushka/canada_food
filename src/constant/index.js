@@ -110,7 +110,6 @@ export const pizzas = [
     }
 ]
 
-
 export const sushi = [
     {
         id:0,
@@ -417,4 +416,90 @@ export const comments = [
     }
 ]
 
+
+
+export const delivery = [
+    {
+        id:0,
+        img: "http://orders.dominopizza.kg/new_design/static/img/icons/icon-pc.svg?1650386477",
+        title:"НЕСКОЛЬКО КЛИКОВ И ЗАКАЗ ГОТОВ",
+        next:"------1------>"
+    },
+    {
+        id:1,
+        img: "http://orders.dominopizza.kg/new_design/static/img/icons/icon-support.svg?1650386477",
+        title:"ОПЕРАТОР ПОДТВЕРДИТ ЗАКАЗ",
+        next:"------2------>"
+    },
+    {
+        id:2,
+        img: "http://orders.dominopizza.kg/new_design/static/img/icons/icon-cafe.svg?1650386477",
+        title:"ЗАВЕДЕНИЕ ПРИГОТОВИТ ЗАКАЗ",
+        next:"------3------>"
+    },
+    {
+        id:3,
+        img: "http://orders.dominopizza.kg/new_design/static/img/icons/icon-moto.svg?1650386477",
+        title:"КУРЬЕР ЗАБИРАЕТ ЗАКАЗ",
+        next:"------4------>"
+    },
+    {
+        id:4,
+        img: "http://orders.dominopizza.kg/new_design/static/img/icons/icon-motoride.svg?1650386477",
+        title:"КУРЬЕР ДОСТАВЛЯЕТ ЗАКАЗ",
+        next:"------5------>"
+    },
+    {
+        id:5,
+        img: "http://orders.dominopizza.kg/new_design/static/img/icons/icon-home.svg?1650386477",
+        title:"ПОЛУЧЕНИЕ И ОПЛАТА ЗАКАЗА",
+        next:""
+    }
+]
+
+export const delivery2 = [
+    {
+        id:0,
+        img: "https://cdn-icons.flaticon.com/png/128/2838/premium/2838794.png?token=exp=1650425079~hmac=2513ecb9877ef3dfca6bb0b238ddf1d1",
+        text: "Доставка в самые короткие сроки."
+    },
+    {
+        id:1,
+        img: "https://cdn-icons-png.flaticon.com/128/1187/1187614.png",
+        text: "У нас действует собственная служба доставки."
+    },
+    {
+        id:2,
+        img: "https://cdn-icons-png.flaticon.com/128/684/684809.png",
+        text: "Доставка в самые короткие сроки."
+    },
+    {
+        id:3,
+        img: "https://cdn-icons-png.flaticon.com/128/1198/1198401.png",
+        text: "Онлайн оплата или наличными курьеру после получения заказа."
+    }
+]
+
+export const delivery3 = [
+    {
+        id:0,
+        icon:"https://cdn-icons-png.flaticon.com/128/6136/6136336.png",
+        payment:"Оплата наличными курьеру"
+    },
+    {
+        id:1,
+        icon:"https://is2-ssl.mzstatic.com/image/thumb/Purple126/v4/54/15/55/54155539-4a30-4487-ff3e-b4ef0a2a0097/source/512x512bb.jpg",
+        payment:"MBank Online от Банка КЫРГЫЗСТАН"
+    },
+    {
+        id:2,
+        icon:"https://cdn-icons-png.flaticon.com/128/196/196578.png",
+        payment:"Оплата услуг картами VISA и MasterCard"
+    },
+    {
+        id:3,
+        icon:"https://cdn6.aptoide.com/imgs/2/6/3/263fef436115e8af2a10d79719afd5da_icon.png",
+        payment:"Оплата услуг через Кошелек «О!Деньги»"
+    },
+]
 

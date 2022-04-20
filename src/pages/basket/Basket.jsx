@@ -3,11 +3,13 @@ import s from "./Basket.module.css";
 import {NavLink} from "react-router-dom";
 import AppContext from "../../contex";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const Basket = () => {
     const {deleteFromBasket, card} = useContext(AppContext)
     return (
-        <div>
+        <div className={s.basketPage}>
+            <Header/>
             {card.length > 0
                 ? (
                     <div className={s.main}>
@@ -33,6 +35,7 @@ const Basket = () => {
                         </NavLink>
                     </div>
                 )}
+                <Footer/>
         </div>
     );
 };
