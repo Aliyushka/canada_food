@@ -20,8 +20,9 @@ const HomePage = ({addToBasket, removeItemInBasket}) => {
                 <MenuForPizza addToBasket={addToBasket} removeItemInBasket={removeItemInBasket}/>
                 <AboutUs/>
                 <Review/>
+                <Footer/>
             </div>
-            <Footer/>
+
 
         </>
     );

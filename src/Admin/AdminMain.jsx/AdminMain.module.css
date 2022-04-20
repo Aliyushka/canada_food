@@ -1,4 +1,102 @@
 .container{
-    width: 1440px;
+    max-width:1440px;
     height: 1234px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 36px;
+}
+
+
+.left{
+    width:255px;
+    background: #363740;
+
+}
+
+.right{
+    width: 1180px;
+}
+.name{
+    font-family: 'Mulish',serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #A4A6B3;
+    opacity: 0.7;
+    margin-left: 12px;
+    margin-top: 15px;
+
+}
+
+.navigation{
+    margin-left: 10px;
+}
+
+.navigation a {
+    color: #DDE2FF;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.right{
+    background: #F7F8FC;
+}
+.pod{
+    margin-bottom: 36px;
+}
+
+.dth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 35px;
+    margin-top: 30px;
+}
+
+.new{
+    font-family: 'Mulish',serif;
+    color: #252733;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 36px;
+}
+
+.col{
+    margin-left: 26px;
+    margin-right: 65px;
+
+}
+
+.user{
+    margin-right: 14px;
+    margin-top: 10px;
+}
+
+.mapp{
+    width: 258px;
+    height: 134px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 58px;
+    border: 1px solid #DFE0EB;
+    margin-left: 30px;
+
+}
+
+.btn{
+    display: flex;
+    flex-wrap: wrap;
 }
