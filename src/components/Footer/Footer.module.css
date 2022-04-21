@@ -4,9 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 4rem;
-    margin: 0 auto;
-    position: relative;
+    margin-top: 10px;
 }
 
 .companyLogo{

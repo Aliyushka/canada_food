@@ -7,8 +7,6 @@ import AboutUs from "../../components/AboutUs/AboutUs";
 import Review from "../../components/Review/Review";
 import Footer from "../../components/Footer/Footer";
 
-
-
 const HomePage = ({addToBasket, removeItemInBasket}) => {
     return (
         <>
@@ -19,10 +17,8 @@ const HomePage = ({addToBasket, removeItemInBasket}) => {
                 <MenuForPizza addToBasket={addToBasket} removeItemInBasket={removeItemInBasket}/>
                 <AboutUs/>
                 <Review/>
-                <Footer/>
             </div>
-
-
+            <Footer/>
         </>
     );
 };

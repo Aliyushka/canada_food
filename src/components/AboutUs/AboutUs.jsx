@@ -12,7 +12,7 @@ const AboutUs = () => {
                 {
                     aboutUs.map((item, index) => {
                         return (
-                            <div className={styles.all}>
+                            <div className={styles.all} key={index}>
                                 <div className={styles.about}>
                                     <img className={styles.rectangle} src={item.image}/>
                                     <h2 className={styles.fast}>{item.title}</h2>

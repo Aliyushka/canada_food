@@ -1,52 +1,56 @@
-import React, {useEffect, useState} from 'react';
-import styles from './Review.module.css'
-import {BASE_URL} from "../../constant";
-import img from '../../media/Group 32.svg'
-import pen from '../../media/ручка.svg'
-
-
+import ReactCardSlider from "../Slider/ReactSlider";
 
 const Review = () => {
-
-    const [comments, setComments] = useState([]);
-
-    const getData = () => {
-        const url = BASE_URL + "comments";
-
-        fetch(url)
-            .then((response) => response.json())
-            .then((data) => setComments(data));
-    };
-
-    useEffect(() => {
-        getData()
-    }, [])
+    const slides = [
+        {
+            image: "https://www.interlinecenter.com/wp-content/uploads/2016/10/dummy-user-img.png",
+            user: "Сергей",
+            comment: "Большое спасибо!",
+            date: "02.07.2020"
+        },
+        {
+            image: "https://www.interlinecenter.com/wp-content/uploads/2016/10/dummy-user-img.png",
+            user: "Айжан",
+            comment: "Очень вкусные роллы",
+            date: "02.07.2020"
+        },
+        {
+            image: "https://www.interlinecenter.com/wp-content/uploads/2016/10/dummy-user-img.png",
+            user: "Алия",
+            comment: "Коллеги довольны",
+            date: "02.07.2020"
+        },
+        {
+            image: "https://www.interlinecenter.com/wp-content/uploads/2016/10/dummy-user-img.png",
+            user: "Бексултан",
+            comment: "Хочу поблагодарить за бургер!",
+            date: "02.07.2020"
+        },
+        {
+            image: "https://www.interlinecenter.com/wp-content/uploads/2016/10/dummy-user-img.png",
+            user: "Наргиза",
+            comment: "Большое спасибо!",
+            date: "02.07.2020"
+        },
+        {
+            image: "https://www.interlinecenter.com/wp-content/uploads/2016/10/dummy-user-img.png",
+            user: "Дамир",
+            comment: "Очень вкусно",
+            date: "02.07.2020"
+        },
+        {
+            image: "https://www.interlinecenter.com/wp-content/uploads/2016/10/dummy-user-img.png",
+            user: "Aizhan",
+            comment: "Delicious. Thanks:)",
+            date: "02.07.2020"
+        }
+    ]
     return (
         <>
             <div className="review">
-                <h2 className={styles.userReview}>Отзывы</h2>
+                <h2>Отзывы</h2>
             </div>
-            <div className={styles.userComments}>
-                {
-                    comments.map((item, index) => {
-                        return (
-                            <div className={styles.parent}>
-                                <img src={img}/>
-                                <div className={styles.group}>
-                                    <img className={styles.vector} src={item.image}/>
-                                    <div className={styles.pen}>
-                                        <p className={styles.userName}>{item.user}</p>
-                                        <img src={pen}/>
-                                    </div>
-                                    <p className={styles.text}>{item.comment}</p>
-                                    <p className={styles.date}>{item.date}</p>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
-            </div>
-
+            <ReactCardSlider slides={slides}/>
         </>
 
     );

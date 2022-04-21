@@ -4,34 +4,80 @@
     overflow: hidden;
     border: 1px solid red;
 }
+.myBasket h1{
+    margin-left: 40%;
+    font-family: Roboto,serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: red;
+    margin-top: 7rem;
+
+}
 
 .main{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 5rem;
-    padding: 1rem 4rem;
     border: 1px solid blue;
 }
 .basket{
     display: flex;
-    flex-direction: column;
-    margin-top: 10rem;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
     border: 1px solid green;
+    position: relative;
+    gap: 14px;
+    margin-left: 20px;
+    align-items: center;
 }
 
-.basket img{
-    width: 200px;
+.img{
+    width: 110px;
 }
 .title{
     width: 200px;
+}
+.des h1{
+    font-size: 18px;
+}
+.des p{
+    font-size: 12px;
+}
+.cancel{
+    width: 24px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+tr h1{
+    font-size: 18px;
+}
+tr p{
+    font-size: 12px;
+}
+td img:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: .6s;
+}{
+
 }
 .empty{
     padding: 10rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 20px;
 }
 .empty strong{
     font-size: 20px;

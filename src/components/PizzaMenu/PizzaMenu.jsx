@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './PizzaMenu.module.css'
 import PizzaBlock from "../PizzaBlock/PizzaBlock";
 
 const PizzaMenu = () => {
-    const [number, setNumber] = useState(1)
-
-    const increment = () => {
-        setNumber(number + 1)
-    }
-    const decrement = () => {
-        setNumber(number - 1)
-    }
 
     const [food, setFood] = useState([])
 
@@ -44,7 +36,7 @@ const PizzaMenu = () => {
                     </nav>
                 </div>
                 <div className={styles.select}>
-                    <p>Сортировать  по:</p>
+                    <p>Сортировать по:</p>
                     <select>
                         <option>По умолчанию</option>
                     </select>
@@ -53,11 +45,9 @@ const PizzaMenu = () => {
                     <div className={styles.pizzaBlock}>
                         {food.map(item => (
                             <PizzaBlock
-                                number={number}
-                                increment={increment}
-                                decrement={decrement}
+                                food={food}
                                 item={item}
-                                key={item.id}
+                                key={item.name}
                             />
                         ))}
                         <button className={styles.more}>Показать еще</button>
